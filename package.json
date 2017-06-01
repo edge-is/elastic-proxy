@@ -1,0 +1,23 @@
+{
+  "name": "elastic-proxy",
+  "version": "1.0.0",
+  "description": "Authentication proxy for elasticsearch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "elasticsearch",
+    "proxy",
+    "jwt",
+    "authentication"
+  ],
+  "author": "Ágúst Ingi Kjartansson <agust.ingi.kjartansson@gmail.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "jsrsasign": "^7.2.0",
+    "request": "^2.81.0",
+    "restify": "^4.3.0",
+    "restify-errors": "^4.3.0"
+  }
+}

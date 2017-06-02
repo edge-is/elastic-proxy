@@ -15,6 +15,8 @@
   "author": "Ágúst Ingi Kjartansson <agust.ingi.kjartansson@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
+    "async": "^2.4.1",
+    "bunyan": "^1.8.10",
     "jsrsasign": "^7.2.0",
     "request": "^2.81.0",
     "restify": "^4.3.0",

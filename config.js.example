@@ -1,0 +1,26 @@
+var config = {
+  jwt : {
+    secret : {
+      utf8 : 'secret'
+    },
+    alg : {
+      alg : ['HS256']
+    },
+    validate : function (jwtToken, callback){
+      console.log('TOKEN', jwtToken.payloadObj);
+      // check the token before accept it
+      return callback(null, true);
+    }
+  },
+  log : {
+      name: 'elastic-proxy',
+      stream: process.stdout
+  },
+  upstreams : [
+    {server: 'http://localhost:9200', interval : 10000, down : false, timeout : 1 },
+    {server: 'http://localhost:9201', interval : 10000, down : false, timeout : 1000 },
+    {server: 'http://localhost:9202', interval : 10000, down : false, timeout : 1000 }
+  ]
+};
+
+module.exports = config;
